@@ -1,5 +1,5 @@
 name: wwff2
-#12530o0o0
+#12530o
 on:
   workflow_dispatch:
 
