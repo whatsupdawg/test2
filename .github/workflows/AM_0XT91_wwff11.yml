@@ -1,10 +1,7 @@
 name: wwff11
-#1234568
-on:
-  workflow_dispatch:
-
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: trufflesecurity/trufflehog@main
