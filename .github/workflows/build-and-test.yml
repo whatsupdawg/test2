@@ -1,0 +1,10 @@
+name: build-and-test
+#adding comment
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "cool"
+      - name: Exit Clean
+        run: exit 0
