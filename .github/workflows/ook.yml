@@ -1,7 +1,7 @@
 name: ook
-
+#change12
 on:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
