@@ -1,0 +1,14 @@
+name: AM Shared Vars Test
+on:
+  workflow_call:
+
+jobs:
+  print-shared-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dawg-io/am-build-vars@main
+        with:
+          load-shared: true
+
+      - run: |
+          echo "image tag $image_tag"
