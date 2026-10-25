@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: dawg-io/am-build-vars@main
+      - uses: dawg-io/am-build-vars@a2f5878109684dc8f0372fe141ed4383614136bf # v1.0.1
         with:
           defaults: |
             node_version: "20"
             test_command: npm test
 
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: ${{ env.node_version }}
           
@@ -27,7 +27,7 @@ jobs:
         run: echo "image_tag=sha-$(git rev-parse --short HEAD)" >> "$GITHUB_ENV"
       
       - name: Share image_tag Var
-        uses: dawg-io/am-build-vars@main
+        uses: dawg-io/am-build-vars@a2f5878109684dc8f0372fe141ed4383614136bf # v1.0.1
         with:
           share-env: image_tag
 
