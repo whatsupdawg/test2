@@ -6,7 +6,7 @@ jobs:
   print-shared-vars:
     runs-on: ubuntu-latest
     steps:
-      - uses: dawg-io/am-build-vars@main
+      - uses: dawg-io/am-build-vars@a2f5878109684dc8f0372fe141ed4383614136bf # v1.0.1
         with:
           load-shared: true
 
